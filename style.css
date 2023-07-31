@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7e838b;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #965ed5;
+  padding: 1.5rem;
+  width: 31.25rem;
+  height: 31.25rem;
+  font-size: larger;
+  border: 2px solid #5976a4;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px #40607b;
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 2rem 0.5rem 2rem;
+  border-bottom: 2px solid #000;
+  margin-bottom: 2rem;
+}
+
+/* they both are inline elements we cannot put margin-top or margin-bottom this is the property of HTML */
+/* So we have to set display: block so the property could be applied */
+
+.lbl-user,
+.lbl-pass {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.check-box {
+  margin-top: 0.3rem;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  width: 5rem;
+  height: 2rem;
+}
+
+.login {
+  border: 2px solid #5976a4;
+  background-color: lightcyan;
+}
+.cancel {
+  border: 2px solid #7359a4;
+  background-color: rgb(188, 112, 112);
+  color: whitesmoke;
+}

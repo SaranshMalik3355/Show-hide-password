@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Show/Hide Password</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-heading">
+      <h1> Project #5</h1>
+      <h2>Show And Hide Password</h2>
+    </div>
+    <div class="app-wrapper">
+      <h1 class="title">log In</h1>
+
+      <!-- Log in form -->
+      <form action="">
+        <label for="username" class="lbl-user">
+          <p>Username</p>
+
+          <!-- id and class have same name but that id = "uname" is not for selecting it in css. It is for 
+          javascript so we can use it to get element  -->
+
+          <input type="text" name="username" id="uname" class="uname" />
+        </label>
+
+        <label for="password" class="lbl-pass">
+          <p>Password</p>
+          <input type="password" name=" password" id="passwd" class="passwd" />
+          <div class="check-box">
+            <input type="checkbox" name="checkbox" id="show-hide" /> Show
+            password
+          </div>
+        </label>
+        <div class="buttons">
+          <button class="login">Login</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
